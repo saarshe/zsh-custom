@@ -101,7 +101,7 @@ Your shell will now support useful shortcuts like:
 ---
 ## 📄 Examples
 
-Open a project with pull and VS Code:
+Open a project, pull changes, and launch in VS Code:
 
 ```bash
 grepo -p -o
