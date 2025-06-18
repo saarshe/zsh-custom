@@ -4,9 +4,9 @@ A collection of personal Zsh scripts and aliases to enhance your terminal workfl
 
 ---
 
-## 📦 Contents
+## 📦 Features
 
-- **scripts/**
+- **Scripts** — Useful custom functions for Git workflows:
   - `grepo` — Interactively select and open a local Git repo; with options to pull and launch in VS Code.
   - `git-garbage-collection` — Prune stale remotes & branches in the current Git repo.
   - `git-branch-switch` — Browse local and remote branches via `fzf` and check out easily.
@@ -16,10 +16,15 @@ A collection of personal Zsh scripts and aliases to enhance your terminal workfl
 
 ## ⚙️ Prerequisites
 
+- macOS or Unix-like environment
 - [Zsh](https://www.zsh.org/)
 - [Oh My Zsh](https://ohmyz.sh/) (optional)
 - [fzf](https://github.com/junegunn/fzf) – required for interactive selections
 - [`code`](https://code.visualstudio.com/) CLI – optional, for opening repos in VS Code (`grepo -o`)
+
+### 📖 Want the full context?
+Check out the blog post that explains my full `.zshrc` setup, including these scripts and more:  
+👉 [Supercharging Your Terminal: A Deep Dive into My .zshrc](https://medium.com/wix-engineering/supercharging-your-terminal-a-deep-dive-into-my-zshrc-ea57757a1d23)
 
 ---
 
@@ -58,17 +63,31 @@ source ~/.zshrc
 
 Your shell will now support useful shortcuts like:
 
-| Alias | Expands To               | Description                      |
-|-------|--------------------------|----------------------------------|
-| `..`  | `cd ..`                  | Go up one directory              |
-| `gl`  | `git pull`               | Git pull                         |
-| `gpo` | `git push origin`        | Git push to origin               |
-| `gst` | `git status`             | Git status                       |
-| `gco` | `git checkout`           | Checkout a branch                |
-| `ggc` | `git-garbage-collection` | Clean stale Git branches         |
-| `gbs` | `git-branch-switch`      | Interactively switch Git branch  |
+| Alias       | Expands To                   | Description                              |
+|-------------|------------------------------|------------------------------------------|
+| **Yarn/Package Management** |              |                                          |
+| `y`         | `yarn`                       | Yarn package manager                     |
+| `my`        | `midgard-yarn`               | Custom Midgard yarn command              |
+| `yb`        | `yarn build`                 | Build the project                        |
+| `yba`       | `yarn build:app`             | Build the app specifically               |
+| `ys`        | `yarn start`                 | Start the development server             |
+| `yt`        | `yarn test`                  | Run tests                                |
+| `ytw`       | `yarn test:watch`            | Run tests in watch mode                  |
+| **Git**     |                              |                                          |
+| `gc-`       | `git checkout -`             | Switch to previous branch                |
+| `ggc`       | `git-garbage-collection`     | Clean stale Git branches                 |
+| `gbs`       | `git-branch-switch`          | Interactively switch Git branch          |
+| **Navigation** |                          |                                          |
+| `..`        | `cd ..`                      | Go up one directory                      |
+| `...`       | `cd ../..`                   | Go up two directories                    |
+| **Date/Time** |                            |                                          |
+| `now`       | `date "+%Y-%m-%d %H:%M:%S"`  | Show current date and time               |
+| `ts`        | `date +%s`                   | Show current timestamp                   |
+| **macOS Finder** |                        |                                          |
+| `showfiles` | `defaults write...`          | Show hidden files in Finder             |
+| `hidefiles` | `defaults write...`          | Hide hidden files in Finder             |
 
-And many more. See [`aliases`](https://github.com/saarshe/zsh-custom/blob/master/aliases) for the full list.
+> 📁 See [`aliases`](aliases) for the full list.
 
 ### 📜 Scripts
 
@@ -80,7 +99,6 @@ And many more. See [`aliases`](https://github.com/saarshe/zsh-custom/blob/master
 | `git-branch-switch`      | Select a branch (local or remote) and switch to it  |
 
 ---
-
 ## 📄 Examples
 
 Open a project with pull and VS Code:
@@ -100,18 +118,11 @@ Switch branches:
 ```bash
 gbs
 ```
-
 ---
 
-## ✍️ Want to Learn More?
+## 📬 Feedback
 
-Check out my Medium article where I go in-depth on my `.zshrc` setup and custom terminal workflows:  
-👉 [Supercharging Your Terminal: A Deep Dive into My .zshrc](https://medium.com/me/stats/post/ea57757a1d23)
-
-> 🔜 Stay tuned for **Part 2**, where I’ll explain how to install and use this repo from scratch.
+Have ideas, requests, or feedback?  
+Open an issue or reach out via [my Medium profile](https://medium.com/@saarshe).
 
 ---
-
-## 🧾 License
-
-MIT © 2025 Saar
