@@ -93,8 +93,8 @@ Your shell will now support useful shortcuts like:
 
 | Script                   | Description                                         |
 |--------------------------|-----------------------------------------------------|
-| `grepo`                  | Interactively select and `cd` into a local repo     |
-|                          | Use `-p` to `git pull`, and `-o` to open in VS Code |
+| `grepo`                  | Interactively select and `cd` into a local repo    |
+|                          | Use `-p` to pull changes, `-o` to open in VS Code  |
 | `git-garbage-collection` | Prune remotes and delete stale local branches       |
 | `git-branch-switch`      | Select a branch (local or remote) and switch to it  |
 
