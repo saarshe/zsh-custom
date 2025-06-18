@@ -1,0 +1,14 @@
+.DS_Store
+.zsh_history
+.zsh_sessions
+*.swp
+*.swo
+*.tmp
+*.bak
+*.old
+*.log
+.vscode/
+brew/
+node_modules/
+Thumbs.db
+ehthumbs.db
