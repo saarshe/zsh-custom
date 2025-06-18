@@ -1,3 +1,4 @@
+# Yarn/Package Management
 alias y='yarn'
 alias my='midgard-yarn'
 alias yb="yarn build"
@@ -6,16 +7,19 @@ alias ys="yarn start"
 alias yt="yarn test"
 alias ytw="yarn test:watch"
 
+# Git
 alias gc-="git checkout -"
+alias ggc="git-garbage-collection"
+alias gbs="git-branch-switch"
 
+# Navigation
 alias ..="cd .."
 alias ...="cd ../.."
 
+# Date/Time
 alias now='date "+%Y-%m-%d %H:%M:%S"'
 alias ts='date +%s'
 
+# macOS Finder
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
-
-alias ggc="git-garbage-collection"
-alias gbs="git-branch-switch"
