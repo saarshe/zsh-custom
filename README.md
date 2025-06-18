@@ -63,13 +63,29 @@ source ~/.zshrc
 
 Your shell will now support useful shortcuts like:
 
-| Alias | Expands To               | Description                      |
-|-------|--------------------------|----------------------------------|
-| `..`  | `cd ..`                  | Go up one directory              |
-| `gl`  | `git pull`               | Git pull                         |
-| `gco` | `git checkout`           | Checkout a branch                |
-| `ggc` | `git-garbage-collection` | Clean stale Git branches         |
-| `gbs` | `git-branch-switch`      | Interactively switch Git branch  |
+| Alias       | Expands To                   | Description                              |
+|-------------|------------------------------|------------------------------------------|
+| **Yarn/Package Management** |              |                                          |
+| `y`         | `yarn`                       | Yarn package manager                     |
+| `my`        | `midgard-yarn`               | Custom Midgard yarn command              |
+| `yb`        | `yarn build`                 | Build the project                        |
+| `yba`       | `yarn build:app`             | Build the app specifically               |
+| `ys`        | `yarn start`                 | Start the development server             |
+| `yt`        | `yarn test`                  | Run tests                                |
+| `ytw`       | `yarn test:watch`            | Run tests in watch mode                  |
+| **Git**     |                              |                                          |
+| `gc-`       | `git checkout -`             | Switch to previous branch                |
+| `ggc`       | `git-garbage-collection`     | Clean stale Git branches                 |
+| `gbs`       | `git-branch-switch`          | Interactively switch Git branch          |
+| **Navigation** |                          |                                          |
+| `..`        | `cd ..`                      | Go up one directory                      |
+| `...`       | `cd ../..`                   | Go up two directories                    |
+| **Date/Time** |                            |                                          |
+| `now`       | `date "+%Y-%m-%d %H:%M:%S"`  | Show current date and time               |
+| `ts`        | `date +%s`                   | Show current timestamp                   |
+| **macOS Finder** |                        |                                          |
+| `showfiles` | `defaults write...`          | Show hidden files in Finder             |
+| `hidefiles` | `defaults write...`          | Hide hidden files in Finder             |
 
 > 📁 See [`aliases`](aliases) for the full list.
 
