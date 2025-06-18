@@ -1,11 +1,21 @@
+alias y='yarn'
+alias my='midgard-yarn'
 alias yb="yarn build"
 alias yba="yarn build:app"
 alias ys="yarn start"
 alias yt="yarn test"
 alias ytw="yarn test:watch"
+
 alias gc-="git checkout -"
+
 alias ..="cd .."
 alias ...="cd ../.."
+
+alias now='date "+%Y-%m-%d %H:%M:%S"'
+alias ts='date +%s'
+
+alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
+alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
 
 alias ggc="git-garbage-collection"
 alias gbs="git-branch-switch"
