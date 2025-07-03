@@ -4,6 +4,7 @@ alias my='midgard-yarn'
 alias yb="yarn build"
 alias yba="yarn build:app"
 alias ys="yarn start"
+alias ysa="yarn start:app"
 alias yt="yarn test"
 alias ytw="yarn test:watch"
 
@@ -15,6 +16,7 @@ alias gbs="git-branch-switch"
 # Navigation
 alias ..="cd .."
 alias ...="cd ../.."
+alias grepo='source ~/dev/zsh-custom/scripts/go-to-repo && go-to-repo'
 
 # Date/Time
 alias now='date "+%Y-%m-%d %H:%M:%S"'
