@@ -16,7 +16,7 @@ alias gbs="git-branch-switch"
 # Navigation
 alias ..="cd .."
 alias ...="cd ../.."
-alias grepo='source ~/dev/zsh-custom/scripts/go-to-repo && go-to-repo'
+alias grepo='go-to-repo'
 
 # Date/Time
 alias now='date "+%Y-%m-%d %H:%M:%S"'
@@ -25,3 +25,6 @@ alias ts='date +%s'
 # macOS Finder
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
+
+# NPM
+alias npv='npm-package-versions'

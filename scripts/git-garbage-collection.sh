@@ -1,11 +1,10 @@
 #!/bin/zsh
 
-# Git Garbage Collection Script
-
 # Exit if not inside a Git repository
-if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
-  echo "❌ Error: This is not a Git repository."
-  exit 1
+git-garbage-collection() {
+  if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+    echo "❌ Error: This is not a Git repository."
+    return 1
 fi
 
 echo "🔄 Fetching and pruning stale remote references..."
@@ -35,5 +34,6 @@ if [[ ${#stale_branches[@]} -gt 0 ]]; then
     fi
   done
 else
-  echo "✅ No stale local branches found."
-fi
+    echo "✅ No stale local branches found."
+  fi
+}
