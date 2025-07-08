@@ -1,11 +1,10 @@
 #!/bin/zsh
 
-# Git Branch Switch Script
-
-# Exit if not inside a Git repository
-if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
-  echo "❌ Error: This is not a Git repository."
-  exit 1
+git-branch-switch() {
+  # Exit if not inside a Git repository
+  if ! git rev-parse --is-inside-work-tree > /dev/null 2>&1; then
+    echo "❌ Error: This is not a Git repository."
+    return 1
 fi
 
 # Fetch all remote references to ensure up-to-date branch list
@@ -27,4 +26,5 @@ if [[ -n $branch ]]; then
   git checkout "$cleaned_branch"
 else
   echo "⚠️ No branch selected."
-fi
+  fi
+}
