@@ -12,6 +12,9 @@ alias ytw="yarn test:watch"
 alias gc-="git checkout -"
 alias ggc="git-garbage-collection"
 alias gbs="git-branch-switch"
+alias gmm="git merge master"
+alias gs="git stash"
+alias gsp="git stash pop"
 
 # Navigation
 alias ..="cd .."
