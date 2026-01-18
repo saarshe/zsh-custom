@@ -31,3 +31,6 @@ alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false &
 
 # NPM
 alias npv='npm-package-versions'
+
+# Tools
+alias pai="npx @wix/premium-ai-cli"
