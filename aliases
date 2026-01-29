@@ -35,3 +35,4 @@ alias npv='npm-package-versions'
 
 # Tools
 alias pai="npx @wix/premium-ai-cli"
+alias c="claude"
